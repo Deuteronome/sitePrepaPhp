@@ -229,3 +229,63 @@ header {
     text-align: justify;
     margin-top: 2vh;
 }
+
+/*mise en forme du tableau de livres*/
+
+.catalog {
+    padding: 3vh;
+    display : flex;
+    justify-content: center;
+    font-family: "Century Gothic", serif;
+    font-size: 2.5vh;
+}
+
+.tableau {
+    width : 80vw;
+    display : flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.tableau>div {
+    border: solid 2px var(--main-fnt-cl);
+    padding : 2px;
+    text-align: center;
+}
+
+.entete {
+    background-color: var(--main-hd-cl);
+    color: var(--head-fnt-cl);
+
+}
+
+.corp {
+    background-color: var(--main-box-cl);
+    color: var(--main-fnt-cl); 
+}
+
+.titreLivre {
+    width : 25vw;
+}
+
+.auteurLivre {
+    width : 15vw;
+}
+
+.genreLivre {
+    width : 15vw;
+}
+
+.dateLivre {
+    width : 8vw;
+}
+
+.pagesLivre {
+    width : 8vw;
+}
+
+.detailLivre {
+    width : 5vw;
+}
+

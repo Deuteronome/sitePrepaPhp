@@ -21,4 +21,13 @@ function getBookList($bdd) {
     return $req;
 }
 
+function getGenreList($bdd) {
+    $sqlQuery = "SELECT nom FROM genres";
+    $logStatement = $bdd->prepare($sqlQuery);
+    $logStatement->execute();
+    $req = $logStatement->fetchAll();
+
+    return $req;
+}
+
 ?>

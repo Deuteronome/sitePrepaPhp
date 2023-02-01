@@ -12,8 +12,11 @@
 
     $bdd= connectDB();
     $bookList = getBookList($bdd);
+    $genreList = getGenreList($bdd);
 
-    var_dump($bookList);
+    
+
+    
     
     require("../view/catalogView.php");
 ?>
