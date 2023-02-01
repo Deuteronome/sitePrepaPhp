@@ -1,4 +1,7 @@
 <?php
+
+    require("../model/model.php");
+
     $titrePage = "choisissez votre livre!";
     $titreOnglet= "Catalogue";
     $menu = [
@@ -7,6 +10,11 @@
         ["label"=>"Mon compte", "lien"=>"../controller/account.php"]*/
     ];
 
+    $bdd= connectDB();
+    $bookList = getBookList($bdd);
+
+    var_dump($bookList);
+    
     require("../view/catalogView.php");
 ?>
 
