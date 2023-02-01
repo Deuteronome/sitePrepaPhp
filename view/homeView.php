@@ -7,15 +7,10 @@
 
 <body>
 
-    <div id="popup">
-        <div id="connectBox">
-            <h3>Identifiez-vous</h3>
-        </div>
-    </div>
-
     
 
         <?php
+            require("../modules/popup.php");
              require("../modules/nav.php");
             require("../modules/header.php");
         ?>
@@ -38,7 +33,7 @@
             </div>
         </div>
     </div>
-    <script src="../JS/logBox.js"></script>
+    
 </body>
 
 </html>

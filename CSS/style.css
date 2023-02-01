@@ -49,7 +49,7 @@ body {
     color: var(--main-fnt-cl);
     background-image: url('../src/images/BGbAND.png');
     background-repeat: repeat-y;
-    background-size: cover;
+    background-size :cover;
     padding-top: 3vh;
 }
 
@@ -139,29 +139,7 @@ header {
 
 /*Pop up de connexion*/
 
-#popup {
-    position:fixed;
-    top:0px;
-    left: 0px;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(245, 222, 179, 0.3);
-    z-index: 15;
-    display: none;
-    justify-content: center;
-    align-items: center;
-}
 
-#connectBox {
-    background-color: wheat;
-    color: var(--main-fnt-cl);
-    border : 3px solid var(--main-fnt-cl);
-    box-shadow: rgb(63, 63, 63) 5px 5px 7px ;
-    padding : 1.5vw;
-    width : 30vw;
-    height: 50vh;
-    text-align: center;
-}
 /*Corps de page d'accueil*/
 
 .main{
@@ -230,6 +208,38 @@ header {
     margin-top: 2vh;
 }
 
+/*mise en form du menu des genre*/
+
+.genreMenu {
+    padding : 3vh;
+    display : flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.genreMenu>form {
+    display : block;
+}
+
+.genreBut {
+    width : 7vw;
+    background-color: var(--main-hd-cl);
+    color : var(--head-fnt-cl);
+    font-family: "tangerine";
+    border: solid 2px var(--main-fnt-cl);
+    border-radius: 3px;
+    box-shadow: 3px 3px 3px var(--main-fnt-cl);
+    padding : 1vmin;
+}
+
+.genreBut:hover {
+    background-color: var(--main-box-cl);
+    color : var(--main-fnt-cl);
+    box-shadow: none;
+}
+
+
+
 /*mise en forme du tableau de livres*/
 
 .catalog {
@@ -244,7 +254,7 @@ header {
     width : 80vw;
     display : flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items:stretch;
     flex-wrap: wrap;
 }
 
@@ -289,3 +299,58 @@ header {
     width : 5vw;
 }
 
+/*formulaire de connaxion*/
+#popup {
+    position:fixed;
+    top:0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(245, 222, 179, 0.3);
+    z-index: 15;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+#connectBox {
+    background-color: wheat;
+    color: var(--main-fnt-cl);
+    border : 3px solid var(--main-fnt-cl);
+    box-shadow: rgb(63, 63, 63) 5px 5px 7px ;
+    padding : 1.5vw;
+    width : 30vw;
+    height: 50vh;
+    text-align: center;
+    display : flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+
+#connectBox>form {
+    display : flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+
+    height : 70%;
+}
+
+.logBut {
+    padding : 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: var(--main-bg-cl);
+    color : var(--main-fnt-cl);
+    border: 2px solid var(--main-fnt-cl);
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px var(--main-fnt-cl);
+    text-align: center;
+}
+
+.logBut:hover {
+    background-color: var(--main-fnt-cl);
+    color : var(--main-bg-cl);
+    box-shadow: none;
+}

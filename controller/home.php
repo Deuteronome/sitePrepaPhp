@@ -1,4 +1,6 @@
 <?php
+    session_start();
+
     $titrePage = "Bienvenue à l'E2C";
     $titreOnglet= "Accueil";
     $menu = [

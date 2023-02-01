@@ -1,4 +1,5 @@
 <?php
+    session_start();
 
     require("../model/model.php");
 
@@ -11,12 +12,13 @@
     ];
 
     $bdd= connectDB();
-    $bookList = getBookList($bdd);
     $genreList = getGenreList($bdd);
 
-    
-
-    
+    if(isset($_POST['genre'])) {
+        $bookList = getBookByGenre($bdd, $_POST['genre']);
+    } else {
+        $bookList = getBookList($bdd);
+    }    
     
     require("../view/catalogView.php");
 ?>

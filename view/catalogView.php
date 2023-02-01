@@ -10,6 +10,7 @@
         <?php
             require("../modules/nav.php");
             require("../modules/header.php");
+            require("../modules/popup.php");
             ?>
             
             <div class="genreMenu">
@@ -18,7 +19,7 @@
                     echo("
                         <form method='post' action='./catalog.php'>
                             <input type='hidden' name='genre' value='".$genre['nom']."'/>
-                            <input type='submit' value='".$genre['nom']."'/>
+                            <input class='genreBut' type='submit' value='".$genre['nom']."'/>
                         </form>
                     ");
                 }

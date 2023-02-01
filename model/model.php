@@ -30,4 +30,15 @@ function getGenreList($bdd) {
     return $req;
 }
 
+function getBookByGenre($bdd, $genre) {
+    $sqlQuery = "SELECT * FROM principal WHERE genre = :genre";
+    $logStatement = $bdd->prepare($sqlQuery);
+    $logStatement->execute([
+        'genre' => $genre
+    ]);
+    $req = $logStatement->fetchAll();
+
+    return $req;
+}
+
 ?>

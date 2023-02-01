@@ -1,0 +1,20 @@
+Voilà l'état du site à la fin de la dernière séance.
+
+Si vous voulez continuer à vous entrainer, il reste pas mal de chose à faire
+
+- script de connexion des utilisateurs
+- Message de bienvenue aux utilisateurs connectés
+- le popup devient un bouton de deconnexion
+- script de deconnexion
+- le bouton compte apparait dans le menu
+- un page compte avec la liste des livres empruntés et des commentaires écrits
+- dans le tableau catalogue, on clique sur détail pour ouvrir la page de détail du livre, avec les résumés et les commentaires des lecteurs
+- dans la page détail, si un utilisateur est connecté, possibilité d'emprunter ou de rendre un livre
+- dans la page détail, si un utilisateur est connecté,possibilité d'ajouter un commentaires
+
+Il y a aussi, ensuite, la nécéssité de créer des fonctions administrateur avec 
+ - l'ajout et la suppression d'utilisateur
+ - la suppression de commentaires
+ - l'ajout de livres à la bibliothèque
+
+ Je suis disponible pour vous aider si besoin : o.burcker@e2c-grandlille.fr
