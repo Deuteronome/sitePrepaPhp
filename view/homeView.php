@@ -16,7 +16,7 @@
     
 
         <?php
-             require("../modules/nav.php");
+            require("../modules/nav.php");
             require("../modules/header.php");
         ?>
 
